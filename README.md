@@ -1,28 +1,29 @@
 # 6_FROST_StaticData
-Script that creates the json payload for the creation of static STA entities via API 
+Script that creates the json payload for the creation of static STA entities via API.
 
-#### Generazione dei JSON statici per la creazione delle entità su FROST  
+### Generazione dei JSON statici per la creazione delle entità su FROST  
+The scripts generate static JSON files, which can be used with **POSTMAN**, for the creation of basic entities on **FROST** for the various pilots of the project.
 
-Gli script generano i file JSON statici, utilizzabili con **POSTMAN**, per la creazione delle entità di base su **FROST** dei vari pilot del progetto.  
-
-#### Entità di base da creare (una tantum):  
+#### Basic Entities to be Created (One-Time):  
 - **Things**  
 - **Locations**  
 - **Feature of Interest (FOI)**  
 - **Observed Properties**  
 - **Datastreams**  
 
-#### Procedura di esecuzione  
-Gli script si basano su file **Excel**, quindi prima di eseguirli è necessario:  
-1. **Avviare un'istanza di Jupyter Notebook.**  
-2. **Eseguire il run di ogni cella dello script.**  
-3. **Specificare nelle celle i percorsi corretti** dei file Excel compilati inizialmente da ogni pilot.  
+#### Execution Procedure
+The scripts are based on **Excel files**, so before executing them, it is necessary to:  
+1. **Start a Jupyter Notebook instance.**  
+2. **Run each cell of the script:** follow the order of the cells as defined in the notebook, ensuring that no errors occur during execution.
+3. **Specify the correct paths to the Excel files** that were initially filled in by each pilot in the cells. 
 
-#### Differenze tra i pilot  
-- **Siviglia**: la geometria delle **location** è rappresentata da una **MultiLineString**.  
-- **Vilnius**: la geometria può essere di tipo **Point** o **Polygon**, a seconda dei casi.  
+#### Differences Between the Pilots 
+- **Seville**: the geometry of the locations is represented by a **MultiLineString**.  
+- **Vilnius**: the geometry can be either a **Point** or a **Polygon**, depending on the case.  
 
-#### Personalizzazioni e modifiche  
-- È possibile **modificare i nomi dei file di output**.  
-- Potrebbe essere necessario **aggiornare gli ID univoci**, ad esempio cambiando `"THI.FE.001"` in `"THI.ZG.001"`.  
-- È importante **aggiornare i counter** per mantenere la coerenza dei dati.  
+#### Customizations and Modifications
+- It is possible to modify the output file names.
+- It might be necessary to update the unique IDs, for example changing "THI.FE.001" to "THI.ZG.001".  
+- It is important to update the counters to maintain data consistency.
+- It is important to modify the sensor indication when creating the Datastreams.
+
