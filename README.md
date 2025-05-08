@@ -1,7 +1,7 @@
 # 6_FROST_StaticData
 Script that creates the json payload for the creation of static STA entities via API.
 
-### Generazione dei JSON statici per la creazione delle entità su FROST  
+### Generation of static JSONsons for entity creation on FROST  
 The scripts generate static JSON files, which can be used with **POSTMAN**, for the creation of basic entities on **FROST** for the various pilots of the project.
 
 #### Basic Entities to be Created (One-Time):  
